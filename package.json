@@ -1,0 +1,29 @@
+
+{
+  "name": "boost_collective",
+  "version": "1.0.0",
+  "description": "Boost Collective is a web application that allows small groups of friends to automatically promote one another's tweets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "twitter",
+    "boost",
+    "collective",
+    "promotion"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.13.7",
+    "passport": "^0.4.1",
+    "passport-twitter": "^1.0.4",
+    "aws-sdk": "^2.1031.0"
+  }
+}
