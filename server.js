@@ -8,8 +8,9 @@ const app = express();
 
 app.use(bodyParser.json()); // For parsing application/json
 
-// In-memory "database" for users for the sake of this example
+// In-memory "database" for users and collectives for the sake of this example
 let users = [];
+let collectives = [];
 
 // User signup handler
 app.post('/signup', (req, res) => {
@@ -30,6 +31,8 @@ app.post('/signin', (req, res) => {
 });
 
 app.post('/create-collective', collective.create);
+app.post('/join-collective', collective.join);
+app.post('/submit-tweet', collective.submitTweet);
 // Other routes...
 
 app.listen(3000, function () {
