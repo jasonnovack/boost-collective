@@ -25,6 +25,11 @@ app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUniniti
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Added route handler for root path
+app.get('/', function (req, res) {
+  res.send('Welcome to Boost Collective!');
+});
+
 // ...
 
 passport.use(new TwitterStrategy({
