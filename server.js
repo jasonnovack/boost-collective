@@ -62,6 +62,8 @@ function(req, res) {
 
 // Other routes...
 
+app.use(express.static("client"));
+
 app.listen(3000, function () {
   console.log('Boost Collective app listening on port 3000!');
 });
