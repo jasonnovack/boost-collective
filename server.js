@@ -7,7 +7,6 @@ const passport = require('passport');
 const TwitterStrategy = require('passport-twitter').Strategy;
 const AWS = require('aws-sdk');
 const bcrypt = require('bcrypt');
-const collective = require('./collective');
 // Other require statements...
 
 AWS.config.update({
